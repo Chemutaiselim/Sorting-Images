@@ -19,7 +19,7 @@ enhanced_lab_image = cv2.merge([equ_l_channel, a_channel, b_channel])
 # Convert the enhanced LAB image back to BGR color space
 enhanced_bgr_image = cv2.cvtColor(enhanced_lab_image, cv2.COLOR_LAB2BGR)
 
-# Display the enhanced image
+# Display the enhanced image gdaxkfhal
 cv2.imshow('Enhanced Image', enhanced_bgr_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
