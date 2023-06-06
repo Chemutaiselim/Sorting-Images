@@ -1,3 +1,8 @@
+#The code runs the three all together i.e. Canny Edge Detection. Laplacian of Gaussian. Sobel Operator.
+
+
+
+
 import cv2
 import numpy as np
 
