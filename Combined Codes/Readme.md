@@ -54,3 +54,30 @@ Color sorting allows you to find and display the best image in a folder based on
 4. `get_best_image(folder_path, sorting_method)`: Determines the best image with the highest color property based on the chosen sorting method.
 5. `display_image(image_path)` Loads and displays the image in its original size.
 
+
+# Contrast Sorting
+
+The Contrast Sorting feature allows you to sort images in a folder based on their contrast properties. Contrast refers to the difference in brightness between the light and dark areas of an image, and it plays an important role in image analysis, enhancement, and visual perception.
+
+## Available Sorting Methods
+
+1. **Histogram Equalization**: Enhances the contrast of an image by redistributing pixel intensities.
+2. **Contrast Limited Adaptive Histogram Equalization (CLAHE)**: Improves contrast while limiting amplification in noise regions.
+3. **Retinex-based Algorithms**: Applies multi-scale Retinex algorithms to enhance contrast by removing the illumination component.
+
+## Usage
+
+1. Prepare a folder containing the images to be sorted.
+2. Set the folder path in the code.
+3. Choose the desired contrast sorting method by specifying it in the code using the `contrast_method` parameter.
+4. Run the code to display the best image based on the selected contrast sorting method.
+
+## How Code Works
+
+1. `apply_histogram_equalization(image)`: Applies histogram equalization to enhance the contrast of the image.
+2. `apply_clahe(image)`: Applies Contrast Limited Adaptive Histogram Equalization (CLAHE) to improve contrast while limiting amplification in noise regions.
+3. `apply_retinex(image)`: Applies multi-scale Retinex algorithms to enhance contrast by removing the illumination component.
+4. `calculate_contrast_stddev(image)`: Calculates the contrast of an image using the standard deviation of pixel intensities.
+5. `get_best_image(folder_path, contrast_method)`: Determines the best image with the highest contrast using the specified contrast sorting method.
+6. `display_image(image_path)`: Loads and displays the image.
+
