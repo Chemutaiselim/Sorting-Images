@@ -55,7 +55,7 @@ Color sorting allows you to find and display the best image in a folder based on
 5. `display_image(image_path)` Loads and displays the image in its original size.
 
 
-# Contrast Sorting
+# 4. Contrast Sorting
 
 The Contrast Sorting feature allows you to sort images in a folder based on their contrast properties. Contrast refers to the difference in brightness between the light and dark areas of an image, and it plays an important role in image analysis, enhancement, and visual perception.
 
@@ -80,4 +80,30 @@ The Contrast Sorting feature allows you to sort images in a folder based on thei
 4. `calculate_contrast_stddev(image)`: Calculates the contrast of an image using the standard deviation of pixel intensities.
 5. `get_best_image(folder_path, contrast_method)`: Determines the best image with the highest contrast using the specified contrast sorting method.
 6. `display_image(image_path)`: Loads and displays the image.
+
+
+# 5. Sharpness Sorting
+
+The Sharpness Sorting feature allows you to sort images in a folder based on their sharpness properties. Sharpness refers to the clarity and focus of an image, and it plays a crucial role in various image analysis tasks such as image quality assessment, object detection, and image enhancement.
+
+## Available Sorting Methods
+
+1. **Laplacian Filter**: Calculates the variance of the Laplacian response to measure the sharpness of an image.
+2. **Sobel Operator**: Computes the gradient magnitude using the Sobel operator to estimate the image sharpness.
+3. **Tenengrad (Gradient Magnitude)**: Evaluates the sharpness by calculating the average gradient magnitude using the Tenengrad algorithm.
+
+## Usage
+
+1. Prepare a folder containing the images to be sorted.
+2. Set the folder path in the code.
+3. Choose the desired sharpness sorting method by specifying it in the code using the `sharpness_method` parameter.
+4. Run the code to display the best image based on the selected sharpness sorting method.
+
+## How Code Works
+
+1. `calculate_laplacian_variance(image)`: Calculates the variance of the Laplacian response to measure the sharpness of an image.
+2. `calculate_sobel_magnitude(image)`: Computes the gradient magnitude using the Sobel operator to estimate the image sharpness.
+3. `calculate_tenengrad(image)`: Evaluates the sharpness by calculating the average gradient magnitude using the Tenengrad algorithm.
+4. `get_best_image(folder_path, sharpness_method)`: Determines the best image with the highest sharpness using the specified sharpness sorting method.
+5. `display_image(image_path)`: Loads and displays the image in its original size.
 
