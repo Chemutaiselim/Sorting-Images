@@ -107,3 +107,27 @@ The Sharpness Sorting feature allows you to sort images in a folder based on the
 4. `get_best_image(folder_path, sharpness_method)`: Determines the best image with the highest sharpness using the specified sharpness sorting method.
 5. `display_image(image_path)`: Loads and displays the image in its original size.
 
+
+# 7. Corner Detection
+
+The corner detection feature allows you to identify and locate corners in images. It is commonly used in various computer vision tasks, such as image matching, tracking, and feature extraction.
+
+## Available Corner Detection Methods
+
+1. **Harris Corner Detection**: Applies the Harris corner detection algorithm to identify corners based on local intensity variations.
+2. **Shi-Tomasi Corner Detection**: Utilizes the Shi-Tomasi algorithm to detect corners based on the minimum eigenvalue of the gradient matrix.
+3. **FAST (Features from Accelerated Segment Test)**: Performs corner detection using the FAST algorithm, which focuses on finding prominent corners quickly.
+
+## Usage
+
+1. Prepare a folder containing the images for corner detection.
+2. Set the folder path in the code.
+3. Choose the desired corner detection method by specifying it in the code through the `corner_method` parameter.
+4. Run the code to identify and display the image with the most detected corners.
+
+## How Code Works
+
+1. `get_best_image(folder_path, corner_method)`: Iterates over the images in the specified folder and applies the chosen corner detection method to find the image with the most corners.
+2. `display_image(image_path)`: Loads and displays the best image in its original size, along with printing its name.
+
+
